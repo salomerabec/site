@@ -9,26 +9,10 @@
       rel="stylesheet"
     />
 
-    <link rel="preload" as="image" href="patisserie/1.jpg">
-    <link rel="preload" as="image" href="patisserie/2.jpg">
-    <link rel="preload" as="image" href="patisserie/3.jpg">
-    <link rel="preload" as="image" href="patisserie/4.jpg">
-        <link rel="preload" as="image" href="patisserie/5.jpg">
-            <link rel="preload" as="image" href="patisserie/6.png">
-                <link rel="preload" as="image" href="patisserie/7.png">
-                    <link rel="preload" as="image" href="patisserie/8.jpg">
-                        <link rel="preload" as="image" href="patisserie/9.jpg">
-
-
-
-
-    <script src="nuit.js" ></script>
-
+    <script src="nuit.js"></script>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="article.css" />
-
-
   </head>
 
   <body>
@@ -36,47 +20,38 @@
       <div class="spinner"></div>
     </div>
 
-    <nav>
-      <a href="index.html">Mon parcours</a>
+ 
+  <nav>
+    <a href="index.html">Mon parcours</a>
 
-      <div class="dropdown">
-        <button
-          class="dropbtn"
-          id="btn-projets"
-          aria-haspopup="true"
-          aria-controls="menu-projets"
-          aria-expanded="false"
-        >
-          Projets ▾
-        </button>
+    <div class="dropdown">
+      <button class="dropbtn" id="btn-projets" aria-haspopup="true" aria-controls="menu-projets" aria-expanded="false">
+        Projets ▾
+      </button>
 
-        <ul class="dropdown-content" id="menu-projets" hidden>
-          <li><a href="site.html">Création du site</a></li>
-          <li><a href="accessibilite.html">Accessibilité du site</a></li>
-          <li><a href="jishotoanki.html">Jisho to Anki</a></li>
-        </ul>
-      </div>
-      <div class="dropdown">
-        <button
-          class="dropbtn"
-          id="btn-passions"
-          type="button"
-          aria-haspopup="true"
-          aria-controls="menu-passions"
-          aria-expanded="false"
-        >
-          Passions ▾
-        </button>
+      <ul class="dropdown-content" id="menu-projets" hidden>
+        <li><a href="site.html">Création du site</a></li>
+        <li><a href="accessibilite.html">Accessibilité du site</a></li>
+        <li><a href="renneslogements.html">Étude : Dynamique logements-population à Rennes</a></li>
+        <li><a href="jishotoanki.html">Jisho to Anki</a></li>        
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" id="btn-passions" type="button" aria-haspopup="true" aria-controls="menu-passions"
+        aria-expanded="false">
+        Passions ▾
+      </button>
 
-        <ul class="dropdown-content" id="menu-passions" hidden>
-          <li><a href="patisserie.html">Pâtisserie</a></li>
-          <li><a href="jardin.html">Jardinage</a></li>
-        </ul>
-      </div>
-      <a href="amenagements.html">Aménagements</a>
+      <ul class="dropdown-content" id="menu-passions" hidden>
+        <li><a href="patisserie.html">Pâtisserie</a></li>
+        <li><a href="jardin.html">Jardinage</a></li>
+      </ul>
+    </div>
+    <a href="amenagements.html">Aménagements</a>
 
-      <a href="contact.html">Contacts</a>
-    </nav>
+    <a href="contact.html">Contacts</a>
+  </nav>
+
 
     <section id="lune" class="section lune">
       <button id="modeNuitButton">
@@ -97,7 +72,6 @@
         </p>
       </div>
 
-
       <div class="photos">
         <img
           src="./patisserie/1.jpg"
@@ -106,7 +80,6 @@
           role="button"
           tabindex="0"
           onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)"
-          
         />
 
         <img
@@ -291,8 +264,5 @@
     <script src="script.js"></script>
     <script src="lightbox.js"></script>
     <script src="nav.js"></script>
-
   </body>
-
-
 </html>
