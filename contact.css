@@ -3,9 +3,8 @@
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   display: flex;
+  grid-template-columns: 1fr 1fr;
   min-height: 100vh; /* occupe au moins toute la fenêtre */
   justify-content: center;
   align-items: center;
@@ -140,4 +139,13 @@
 
 h3 {
   margin-bottom: 4vh; /* Ajuste cette valeur pour avoir plus ou moins d'espace sous le titre */
+}
+
+
+
+
+
+.taille {
+  width: 250px;
+  height: 180px;
 }
