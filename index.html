@@ -15,6 +15,7 @@
 <script src="index.js" defer></script>
 <script src="lazyload.js"></script>
 
+
 </head>
 
 <body>
@@ -93,7 +94,6 @@
   </div>
 </section>
 
-  <div>    <p class="valeurs">🧮 Rigueur – 🔍 Esprit d’analyse – 🌍 Sens du service public</p></div>
 
 
 
@@ -165,19 +165,24 @@
           width="300" height="405" title="Lien : Badge de connaissances en japonais"></iframe>
         <figcaption>Japonais 🗻🗼</figcaption>
       </figure>
+            <figure>
+      <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1051096/pic/embed" width="300" height="405"
+      title="Lien : Badge CNIL : Atelier RGPD" ></iframe></iframe>
+        <figcaption>Protection des données 🫆</figcaption>
+        </figure>
       <figure>
         <iframe frameborder="0" scrolling="no" src="https://openbadgepassport.com/app/badge/info/1018608/pic/embed"
           width="300" height="405"
           title="Lien : Badge de certification de connaissances en écologie de l'université de Poitiers"></iframe>
         <figcaption>Écologie 🌱</figcaption>
       </figure>
-      <figure>
+
+
+              <figure>
         <iframe frameborder="0" scrolling="no" src="https://openbadgepassport.com/app/badge/info/990565/pic/embed"
           width="300" height="405" title="Lien : Badge d'étudiante au CNED"></iframe>
         <figcaption>Autonomie 📚</figcaption>
       </figure>
-
-
     </div>
 
     <br>
@@ -212,14 +217,14 @@
     <select id="filterTags" aria-label="Filtrer par catégorie">
       <option value="all">Tous</option>
       <option value="web">Web</option>
+      <option value="Data">Data</option>
       <option value="crypto">Cryptographie</option>
-      <option value="ia">Intelligence Artificielle</option>
     </select>
 
             <!-- Grille des projets -->
                    <div id="projectsGrid" class="grid">
 
-<a href="site.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="site.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Création de ce site</h3>
@@ -227,7 +232,7 @@
 
       </a>
 
-                <a href="accessibilite.html" class="project" data-tags="web handicap" role="button" tabindex="0"
+                <a href="accessibilite.html" class="project" data-tags="Web Handicap" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Accessibilité du site</h3>
@@ -235,7 +240,7 @@
 
       </a>
 
-<a href="jishotoanki.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="jishotoanki.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Jisho to Anki</h3>
@@ -243,7 +248,7 @@
 
       </a>
 
-                <a href="renneslogements.html" class="project" data-tags="data" role="button" tabindex="0"
+                <a href="renneslogements.html" class="project" data-tags="Data" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Étude statistique 📊</h3>
@@ -251,10 +256,17 @@
 
       </a>
             </div>
+
+    <div id="noResults" style="font-style: italic;display:none; margin-top:20px; font-size:20px;">
+      <br><br>
+  Projets à venir... ⏳
+  <br><br><br><br>
+  </div>
+   
+            
     <br><br><br>
   </section>
 
-  </section>
 
 
 
@@ -290,7 +302,7 @@
 
   <script src="nav.js">    </script>
 
-
+<script src="recherche.js"></script>
 </body>
 
 </html>

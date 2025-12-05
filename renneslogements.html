@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salomé RABEC</title>
+  <title>Dynamique logement–population à Rennes</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
   <script src="nuit.js"></script>
@@ -380,14 +380,14 @@ grandit plus vite que le nombre de ménages, ayant une avance de 3 750.
     <select id="filterTags" aria-label="Filtrer par catégorie">
       <option value="all">Tous</option>
       <option value="web">Web</option>
+      <option value="Data">Data</option>
       <option value="crypto">Cryptographie</option>
-      <option value="ia">Intelligence Artificielle</option>
     </select>
 
             <!-- Grille des projets -->
                    <div id="projectsGrid" class="grid">
 
-<a href="site.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="site.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Création de ce site</h3>
@@ -395,7 +395,7 @@ grandit plus vite que le nombre de ménages, ayant une avance de 3 750.
 
       </a>
 
-                <a href="accessibilite.html" class="project" data-tags="web handicap" role="button" tabindex="0"
+                <a href="accessibilite.html" class="project" data-tags="Web Handicap" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Accessibilité du site</h3>
@@ -403,7 +403,7 @@ grandit plus vite que le nombre de ménages, ayant une avance de 3 750.
 
       </a>
 
-<a href="jishotoanki.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="jishotoanki.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Jisho to Anki</h3>
@@ -411,7 +411,7 @@ grandit plus vite que le nombre de ménages, ayant une avance de 3 750.
 
       </a>
 
-                <a href="renneslogements.html" class="project" data-tags="data" role="button" tabindex="0"
+                <a href="renneslogements.html" class="project" data-tags="Data" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Étude statistique 📊</h3>
@@ -419,10 +419,17 @@ grandit plus vite que le nombre de ménages, ayant une avance de 3 750.
 
       </a>
             </div>
+
+    <div id="noResults" style="font-style: italic;display:none; margin-top:20px; font-size:20px;">
+      <br><br>
+  Projets à venir... ⏳
+  <br><br><br><br>
+  </div>
+   
+            
     <br><br><br>
   </section>
 
-  </section>
 
 
 
@@ -505,7 +512,7 @@ document.querySelectorAll(".carousel").forEach(initCarousel);
 </script>
 
 
-
+<script src="recherche.js"></script>
 
 </body>
 

@@ -70,21 +70,21 @@
             <br><br></h2>
     
             
-                <!-- Barre de recherche -->
-                <input type="text" id="searchBar" placeholder="Rechercher un projet..." />
-            
-                <!-- Menu déroulant pour filtrer par tags -->
-                <select id="filterTags" aria-label="Filtrer par catégorie">
-                    <option value="all">Tous</option>
-                    <option value="web">Web</option>
-                    <option value="crypto">Cryptographie</option>
-                    <option value="ia">Intelligence Artificielle</option>
-                </select>
-            
+    <!-- Barre de recherche -->
+    <input type="text" id="searchBar" placeholder="Rechercher un projet..." />
+
+    <!-- Menu déroulant pour filtrer par tags -->
+    <select id="filterTags" aria-label="Filtrer par catégorie">
+      <option value="all">Tous</option>
+      <option value="web">Web</option>
+      <option value="Data">Data</option>
+      <option value="crypto">Cryptographie</option>
+    </select>
+
             <!-- Grille des projets -->
                    <div id="projectsGrid" class="grid">
 
-<a href="site.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="site.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Création de ce site</h3>
@@ -92,7 +92,7 @@
 
       </a>
 
-                <a href="accessibilite.html" class="project" data-tags="web handicap" role="button" tabindex="0"
+                <a href="accessibilite.html" class="project" data-tags="Web Handicap" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Accessibilité du site</h3>
@@ -100,7 +100,7 @@
 
       </a>
 
-<a href="jishotoanki.html" class="project" data-tags="web" role="button" tabindex="0"
+<a href="jishotoanki.html" class="project" data-tags="Web" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Jisho to Anki</h3>
@@ -108,7 +108,7 @@
 
       </a>
 
-                <a href="renneslogements.html" class="project" data-tags="data" role="button" tabindex="0"
+                <a href="renneslogements.html" class="project" data-tags="Data" role="button" tabindex="0"
         onkeydown="if(event.key === 'Enter' || event.key === ' ') openLightbox(this)">
 
         <h3>Étude statistique 📊</h3>
@@ -116,10 +116,17 @@
 
       </a>
             </div>
-                <br><br><br>
-            </section>
+
+    <div id="noResults" style="font-style: italic;display:none; margin-top:20px; font-size:20px;">
+      <br><br>
+  Projets à venir... ⏳
+  <br><br><br><br>
+  </div>
+   
             
-        </section>
+    <br><br><br>
+  </section>
+
     
     
     
@@ -152,6 +159,7 @@
     
         <script src="script.js"></script>
         <script src="nav.js">    </script>
+        <script src="recherche.js"></script>
     
     </body>
     
